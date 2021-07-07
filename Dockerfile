@@ -6,6 +6,7 @@ RUN apt-get update -y
 RUN apt-get install -y wget curl bash git neofetch sudo python3 python3-pip ffmpeg
 
 #Updating Libraries
+RUN pip3 install wheels pip
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
