@@ -3,7 +3,7 @@ RUN mkdir /BOT && chmod 777 /BOT
 WORKDIR /BOT
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
-RUN apt-get install -y wget curl bash git neofetch sudo software-properties-common ffmpeg
+RUN apt-get install -y wget curl bash git neofetch sudo python3 python3-pip ffmpeg
 
 #Updating Libraries
 COPY requirements.txt .
